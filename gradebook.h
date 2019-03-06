@@ -8,7 +8,7 @@ class GradeBook {
   /* Returns the grade at the supplied index. When that index is out of range, a
    * value of NAN (from cmath) is returned.
    */
-  double Get(size_t index) const;
+  double Get(size_t index) const; 
 
 
   /* Adds two GradeBook instances together and returns their join as a new
