@@ -1,3 +1,11 @@
+#ifndef GRADEBOOK_H  // NOLINT
+#define GRADEBOOK_H  // NOLINT
+
+#include <cmath>
+#include <vector>
+
+
+
 class GradeBook {
  public:
   /* Adds a new grade to the gradebook instance, increasing size by 1.
@@ -50,4 +58,8 @@ class GradeBook {
    * -infinity.
    */
   bool LessThan(const GradeBook& that) const;
+
+private: //class variables
+std::vector<double> book;
 };
+#endif  // NOLINT
