@@ -27,6 +27,24 @@ const GradeBook GradeBook::Add(const GradeBook& that) const {
     return newBook;
 } // ending bracket for method Add (two books)
 
+double GradeBook::GetGPA() const {
+    double ret;
+    double sum = 0;
+    if(book.size == 0) {
+        ret = NAN;
+    } else {
+        for (int i = 0; i < book.size; ++i) {
+            sum += book[i];
+        } // ending bracket for for loop
+        ret = sum / book.size;
+    } // ending bracket for if else
+    return ret;
+} // ending bracket for GetGPA
+
+double GradeBook::GetMax() const {
+    
+}
+
 
 
 
