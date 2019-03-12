@@ -30,6 +30,7 @@ const GradeBook GradeBook::Add(const GradeBook& that) const {
 double GradeBook::GetGPA() const {
     double ret;
     double sum = 0;
+<<<<<<< HEAD
     if(((int) (book.size())) == 0) {
         ret = NAN;
     } else {
@@ -37,11 +38,21 @@ double GradeBook::GetGPA() const {
             sum += book[i];
         } // ending bracket for for loop
         ret = sum / ((int) (book.size()));
+=======
+    if(book.size == 0) {
+        ret = NAN;
+    } else {
+        for (int i = 0; i < book.size; ++i) {
+            sum += book[i];
+        } // ending bracket for for loop
+        ret = sum / book.size;
+>>>>>>> c981213390c5b9d4229a365d081b1f7a0fe282af
     } // ending bracket for if else
     return ret;
 } // ending bracket for GetGPA
 
 double GradeBook::GetMax() const {
+<<<<<<< HEAD
     double ret = 0;
     if (((int) (book.size())) == 0) {
         ret = NAN;
@@ -63,6 +74,11 @@ bool GradeBook::Equals(const GradeBook& that) const {
     double callingAve = 0;
     double paramAve = 0;
     bool ret;
+=======
+    
+}
+
+>>>>>>> c981213390c5b9d4229a365d081b1f7a0fe282af
 
     if (((int) (book.size())) > 0) {
         for (int i = 0; i < ((int) (book.size())); ++i) {
