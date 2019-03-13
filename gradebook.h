@@ -1,3 +1,4 @@
+// Copyright 2019 <Benjamin Ritz>
 #ifndef GRADEBOOK_H  // NOLINT
 #define GRADEBOOK_H  // NOLINT
 
@@ -16,7 +17,7 @@ class GradeBook {
   /* Returns the grade at the supplied index. When that index is out of range, a
    * value of NAN (from cmath) is returned.
    */
-  double Get(size_t index) const; 
+  double Get(size_t index) const;
 
 
   /* Adds two GradeBook instances together and returns their join as a new
@@ -59,7 +60,7 @@ class GradeBook {
    */
   bool LessThan(const GradeBook& that) const;
 
-private: //class variables
+ private:  // class variables
 std::vector<double> book;
 };
 #endif  // NOLINT

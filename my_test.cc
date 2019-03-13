@@ -4,6 +4,8 @@
 
 GradeBook test;
 GradeBook test2;
+GradeBook test3;
+GradeBook test4;
 const size_t size = 15;
 
 
@@ -18,6 +20,9 @@ int main(int argc, char* argv[]) {
     test2.Add(15.53);
     test2.Add(36.45);
     test2.Add(25);
+
+    test3.Add(25);
+    test4.Add(25.0001);
 
     size_t index1= 0;
     size_t index2= 2;
@@ -41,6 +46,8 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < ((int) (total2.GetSize())); ++i) {
         std::cout << total2.Get(i) << std::endl;
     }
+
+    std::cout << test3.Equals(test4) << std::endl;
 
     return 0;
 }
