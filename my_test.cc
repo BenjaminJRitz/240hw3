@@ -6,6 +6,13 @@ GradeBook test;
 GradeBook test2;
 GradeBook test3;
 GradeBook test4;
+GradeBook test5;
+GradeBook test6;
+GradeBook test7;
+GradeBook test8;
+GradeBook test9;
+GradeBook test10;
+GradeBook test11;
 const size_t size = 15;
 
 
@@ -23,6 +30,21 @@ int main(int argc, char* argv[]) {
 
     test3.Add(25);
     test4.Add(25.0001);
+    test5.Add(25);
+    test6.Add(24.000000001);
+    test7.Add(25.001);
+    test8.Add(25.00001);
+
+    test9.Add(100);
+    test9.Add(50);
+    test9.Add(100);
+
+    test10.Add(100);
+    test10.Add(50);
+    test10.Add(75);
+
+    
+
 
     size_t index1= 0;
     size_t index2= 2;
@@ -48,6 +70,16 @@ int main(int argc, char* argv[]) {
     }
 
     std::cout << test3.Equals(test4) << std::endl;
+    std::cout << test5.Equals(test6) << std::endl;
+    std::cout << test4.Equals(test6) << std::endl;
+    std::cout << test3.Equals(test5) << std::endl;
+    std::cout << test3.Equals(test8) << std::endl;
+
+    std::cout << test9.LessThan(test10) << std::endl;
+    std::cout << test10.LessThan(test9) << std::endl;
+
+    std::cout << test11.LessThan(test9) << std::endl;
+    std::cout << test9.LessThan(test9) << std::endl;
 
     return 0;
 }
